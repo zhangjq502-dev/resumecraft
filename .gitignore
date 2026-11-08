@@ -1,0 +1,23 @@
+node_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+
+# Generated from the installed pdfjs-dist version
+src/renderer/public/pdf-assets/
+
+# Private documents, local settings and credentials
+/docs/
+/导学-*.md
+/面经-*.md
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.tsbuildinfo

@@ -1,0 +1,163 @@
+.dialog {
+  width: min(960px, calc(100vw - 60px));
+  max-height: calc(100vh - 60px);
+  padding: 26px;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  color: #27272a;
+  &::backdrop {
+    background: #18181b66;
+  }
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      color: #71717a;
+      margin: 9px 0 24px;
+    }
+  }
+  footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #71717a;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  section {
+    min-width: 0;
+  }
+  h3 {
+    font-size: 14px;
+    margin: 15px 0 8px;
+    span {
+      margin-left: 8px;
+      font-size: 10px;
+      font-weight: 400;
+      color: #71717a;
+    }
+  }
+  p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #71717a;
+    min-height: 40px;
+  }
+}
+.thumbnail {
+  aspect-ratio: 210 / 297;
+  border: 1px solid #e4e4e7;
+  padding: 20px 15px;
+  background: white;
+  strong {
+    font-size: 15px;
+    color: #273e5c;
+  }
+  small {
+    display: block;
+    margin-top: 8px;
+    font-size: 6px;
+    color: #a1a1aa;
+  }
+  > div {
+    margin-top: 17px;
+  }
+  b {
+    display: block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #a1a1aa;
+    font-size: 8px;
+    font-weight: 500;
+  }
+  i {
+    display: block;
+    height: 2px;
+    background: #d4d4d8;
+    margin-top: 6px;
+    &:last-child {
+      width: 70%;
+    }
+  }
+}
+.modern {
+  > div {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 8px;
+  }
+  strong {
+    color: #0e766e;
+  }
+  b {
+    border: 0;
+    color: #0e766e;
+    font-size: 7px;
+  }
+}
+.minimal {
+  strong,
+  small {
+    display: block;
+    text-align: center;
+    color: #27272a;
+  }
+  b {
+    border: 0;
+  }
+}
+.compact {
+  strong {
+    font-size: 13px;
+    color: #27272a;
+  }
+  > div {
+    margin-top: 11px;
+  }
+  b {
+    background: #f4f4f5;
+    border: 0;
+    padding: 3px;
+  }
+  i {
+    margin-top: 5px;
+  }
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  button {
+    font-size: 11px;
+    &:first-child {
+      background: #27272a;
+      color: white;
+      border-color: #27272a;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.standard {
+  strong,
+  small {
+    display: block;
+    text-align: center;
+    color: #222;
+  }
+  b {
+    color: #222;
+    border-color: #222;
+  }
+}

@@ -1,0 +1,46 @@
+.settings {
+  border-bottom: 1px solid #e4e4e7;
+  margin-bottom: 12px;
+  summary {
+    cursor: pointer;
+    padding: 12px 0;
+    color: #52525b;
+    font-size: 12px;
+  }
+}
+.content {
+  padding: 8px 0 16px;
+  img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  > button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 11px;
+  }
+  label {
+    display: block;
+    margin: 18px 0;
+    font-size: 11px;
+    color: #52525b;
+  }
+  output {
+    float: right;
+    color: #71717a;
+  }
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  p {
+    color: #85858e;
+    font-size: 10px;
+    line-height: 1.8;
+  }
+}

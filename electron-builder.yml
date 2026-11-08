@@ -1,0 +1,31 @@
+appId: com.resumecraft.app
+productName: ResumeCraft
+copyright: Copyright © 2026 ResumeCraft
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - resources/**/*
+  - package.json
+asar: true
+win:
+  icon: build/icon.ico
+  executableName: ResumeCraft
+  target: nsis
+nsis:
+  artifactName: ${name}-${version}-${arch}-setup.${ext}
+  shortcutName: ResumeCraft
+  uninstallDisplayName: ResumeCraft
+  createDesktopShortcut: always
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  icon: build/icon.icns
+  category: public.app-category.productivity
+  target: [dmg, zip]
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize: false
+dmg:
+  artifactName: ${name}-${version}-${arch}.${ext}
+npmRebuild: false
