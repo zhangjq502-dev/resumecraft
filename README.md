@@ -1,6 +1,10 @@
 # ResumeCraft
 
-本地优先的 Markdown 桌面简历编辑器。Electron + React（实际版本见 package.json）+ TypeScript + SCSS Modules + Zustand。
+ResumeCraft 是一款本地优先的桌面简历编辑器，基于 Electron、React 和 TypeScript 构建，支持模块化表单与 Markdown 编辑、模板切换、实时预览、PDF 简历导入和 A4 PDF 导出。简历保存在本机，无需登录即可使用，适合管理面向不同岗位的多份简历。
+
+支持多简历管理、版本快照与恢复、字段显示控制、头像设置及 JSON 备份，帮助完成从内容整理、版式调整到导出投递的完整流程。PDF 导入采用本地文字提取与规则识别，导入结果可人工核对修改。
+
+技术栈：Electron · React · TypeScript · Zustand · SCSS Modules · PDF.js。
 
 ## 开发
 需要 Node.js 22.12+ 与 npm。
